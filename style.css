@@ -1,0 +1,233 @@
+
+  /* variaveis */
+  :root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #c0c0c0;
+    --cor-botao-azul: #167BF7;
+    --cor-frase-lingua: #EC2F46;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-efeito: #3c92fa;
+}
+
+/* Tudo da pagina */
+* {
+    padding: 0;
+    margin: 0;
+ }
+
+
+/* corpo do texto */
+ body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+ }
+
+ /*foto de fundo */
+ .principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+ }
+
+ .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+ }
+ 
+ /* Assine por 12x de 120,00**/
+ .container__botao {
+    /* background-color: var(--cor-botao-azul); */
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+ }
+/* Assinar somente o Alura+ */
+ .botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+
+ }
+
+ /* Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único. */
+ .container__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    text-align: center;
+    font-size: 28px;
+    line-height: 33.89px;
+
+ }
+
+ /* *O preço pode variar caso a assinatura seja feita em outros planos. */
+.container__aviso {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+/* a foto */
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+/* classe da div */
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+/* >Assista do seu jeito */
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    margin-bottom: 0.05em;
+}
+
+/* proveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de cursos não para de crescer */
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin: 1em 0;
+}
+
+.descricao__texto{
+    padding: 2em;
+} 
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    margin-bottom: 1em;
+}
+
+.lista__itens {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+}
+
+.rodape__logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 669px;
+    margin-bottom: 100px;
+    margin-right: 669px;
+    margin-top: auto;
+}
+
+
+.rodape__lista {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-left: 158px;
+    margin-right: 158px;
+    margin-bottom: 207.01px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    list-style: none;
+    color: var(--cinza-secundario);
+}
+.lista__link {
+    text-decoration: none;
+    list-style: none;
+    color: var(--cinza-secundario);
+}
+.rodape__texto {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin-bottom: 65px;
+   font-family: var(--fonte-principal);
+   color: var(--cinza-secundario);
+   font-size: 14px;
+}
+
+.link__link {
+    text-decoration: none;
+    list-style: none;
+    color: var(--cinza-secundario);
+}
+
+.link__link:hover{
+    color: var(--branco-principal);
+}
+
+
+
+.link__link:active {
+    color: var(--branco-principal);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-efeito);
+    color: #00030C;
+}
+
+@media screen and (max-width :768px) {
+    .container {
+        display: block;
+        background-image: none;
+    }
+    .container__imagem {
+        width: 50vw;
+        
+    }
+    .container__caixa {
+        margin: 2em 2em;
+    }
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+    .secundario__imagem {
+        width: 50vw;
+    }
+    .dispositivos__lista {
+        display: block;
+    }
+    .rodape__lista {
+        display: block;
+        text-align: center;
+        align-items: center
+    }
